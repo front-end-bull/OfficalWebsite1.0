@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<title>保险神器</title>
+<meta name="description" content="JDC Design Studio is a personal online portfolio, visual playground and testing ground of Jessie Daryl Cacafranca. Most of the showcased work are web, graphics, and photography."/>
+<meta name="keywords" content="Web Design, Graphic Design, Photography, Cebu, Philippines, Saudi Arabia, UX Designer, Digital Specialist, Social Media"/>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/slippry.css">
+<link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/animate.min.css">
+<script type="text/javascript">
+  var phoneWidth = parseInt(window.screen.width);
+  var titleArr = []
+
+  if(phoneWidth<1000){
+
+    titleArr.push("互联网＋保险的探索者，<br>致力于创造最好用的展业工具")
+    var phoneScale = phoneWidth/375;
+    console.log(phoneScale)
+    var ua = navigator.userAgent;
+    if (/Android (\d+\.\d+)/.test(ua)){
+        var version = parseFloat(RegExp.$1);
+        if(version>2.3){
+            document.write('<meta name="viewport" content="width=375,  user-scalable=no,minimum-scale = '+phoneScale+', maximum-scale = '+phoneScale+', target-densitydpi=device-dpi">');
+        }else{
+            document.write('<meta name="viewport" content="width=375, user-scalable=no,target-densitydpi=device-dpi">');
+        }
+    } else {
+        document.write('<meta name="viewport" content="width=375, user-scalable=no,target-densitydpi=device-dpi">');
+    }
+  }else{
+        titleArr.push("互联网＋保险的探索者，致力于创造最好用的展业工具")
+        document.write('<meta name="viewport" content="width=device-width, initial-scale=1">');
+  }
+  
+</script>
+<script src="js/analytics.js"></script>
+<script src="js/jquery.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/preloader.min.js"></script>
+
+<script src="js/modernizr.js"></script>
+<!-- Modernizr -->
+<script src="js/slippry.js"></script>
+<!-- slideshow -->
+<script src="js/typed.js"></script>
+<!-- type ani -->
+<script>
+    $(function(){
+        $(".element").typed({
+          strings:titleArr,
+          typeSpeed: 70,
+          showCursor: false
+        });
+    });
+</script>
+<script>
+    $(function() {  
+      $('a[href*=#]:not([href=#])').click(function() {
+        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+          var target = $(this.hash);
+          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+          if (target.length) {
+            $('html,body').animate({
+              scrollTop: target.offset().top
+            }, 1000);
+            return false;
+          }
+        }
+      });
+    });
+</script>
+<style>
+   [data-sr] { visibility: hidden; }
+</style>
+</head>
+<body id="dummybodyid">
+<div class="bar">
+</div>
+<div class="sy-box">
+  <div class="sy-slides-wrap">
+    <div class="sy-slides-crop">
+      <ul id="slider" style="list-style: none; width: 100%; height: 100%; padding: 0; margin: 0;" class="hde sy-list">
+        <li class="sy-slide kenburns useCSS" style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img src="bg/2.jpg"></li>
+        <li class="sy-slide kenburns useCSS sy-ken sy-active" style="transition-duration: 5000ms; opacity: 1; animation-duration: 19000ms;"><img src="bg/3.jpg"></li>
+        <li class="sy-slide kenburns useCSS" style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img src="bg/1.jpg"></li>
+        <li class="sy-slide kenburns useCSS" style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img src="bg/4.jpg"></li>
+        <li class="sy-slide kenburns useCSS" style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img src="bg/5.jpg"></li>
+        <li class="sy-slide kenburns useCSS" style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img src="bg/7.jpg"></li>
+        <li class="sy-slide kenburns useCSS" style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img src="bg/6.jpg"></li>
+      </ul>
+    </div>
+    <div class="sy-caption-wrap">
+      <div class="sy-caption" style="display: none;">
+      </div>
+    </div>
+    <div class="sy-filler ready" style="padding-top: 66.7003%;">
+    </div>
+  </div>
+</div>
+<script>
+    $(function() {
+      var demo1 = $("#slider").slippry({
+         transition: 'kenburns',
+         useCSS: true,
+         speed: 5000,
+         pause: 9000,
+         auto: true,
+         controls: false,
+         preload: 'visible',
+         autoHover: false
+      });
+    });
+  </script>
+<!-- header  -->
+<div id="topBanner">
+    <div id="mainTittle" onclick="toModule('mainTittle')">保险神器</div>
+    <div >保险师智能展业工具</div>
+    <div class="l-tittle phone-show" onclick="toModule('hezuo')">合作机构</div>
+    <div class="l-tittle phone-show" onclick="toModule('tuandui')">团队介绍</div>
+    <div class="l-tittle phone-show" onclick="toModule('wenti')">常见问题</div>
+    <div class="l-tittle phone-show" onclick="toModule('yongjin')">产品佣金</div>
+    <div class="l-tittle phone-show" onclick="toModule('gongneng')">功能展示</div>
+</div>
+
+<div class="container-fluid prx-b " id="header" style="padding-top:0;">
+  <div class="row">
+    <div class="col-sm-12"> 
+      <div class="caption" >
+        <h1 class="element" style="font-size:0.55rem;color:white;">互联网＋保险的探索者，致力于创造最好用的展业工具</h1>
+        <span style="font-size:0.27rem;color:white;" class="phone-hidden">我们服务全国500万保险代理人，帮助他们更智能、更快捷、更专业的工作</span>
+        <div  class="download">
+          <img src="img/iphone.png" alt="" >
+          <img src="img/android.png" alt="" >
+          <img src="img/xiazailianjie.png" alt="">
+        </div>
+      <!--   <div style="position:relative;width:3.88rem;height:1.3rem;border-radius:0.08rem;left:50%;margin-left:-1.94rem;top:1.2rem;">
+          <img src="img/iphone.png" alt="" style="width:2.38rem;height:0.55rem;position:absolute;top:0;left:0;">
+          <img src="img/android.png" alt="" style="width:2.38rem;height:0.55rem;position:absolute;top:0.7rem;left:0;">
+          <img src="img/xiazailianjie.png" alt="" style="width:1.3rem;height:1.3rem;position:absolute;top:0;right:0;">
+        </div> -->
+
+      <!--   <p class="m-button">
+          <a href="http://www.jdcdesignstudio.com/docs/JDC-Resume.pdf" class="ghost-button" target="_blank">CV</a> &nbsp; <a href="http://www.jdcdesignstudio.com/docs/JDC-Portfolio.pdf" class="ghost-button" target="_blank">Portfolio</a>
+        </p> -->
+        <div id="mice" style="">
+          <!-- <a href="http://www.jdcdesignstudio.com/#scroll"> -->
+          <div class="mouse">
+            <div class="wheel">
+            </div>
+          </div>
+          <div>
+            <span class="unu"></span><span class="doi"></span>
+          </div>
+          <!-- </a> -->
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 展业神器 -->
+<div class="container-fluid zp phone-container" style="background: rgba(255,255,255,0.85);width:100%;" id="gongneng">
+  <div class="row" style="margin-bottom:0.8rem;">
+    <div class="col-sm-3 no-space phone-title" style="font-size:0.55rem;color:#4e5776;line-height:0.5rem;font-weight:bold;text-align:center;">
+      展业神器
+    </div>
+    <div class="col-sm-9 no-space phone-title-small">
+      我们努力深入代理人群体，只为了能确实的提高展业效率，解决展业难题
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-3 no-space pos-r phone-grid ">
+      <img src="img/feilvjisuan.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
+      <div style="font-size:0.33rem;text-align:center;padding:0.1rem;" id="feilvjisuan">
+        费率计算
+      </div>
+      <div style="font-size:0.17rem;text-align:center;">
+        涵盖40余家公司的300款产品
+        <br>
+        更全、更快、更准
+      </div>
+    </div>
+    <div class="col-sm-3 no-space pos-r phone-grid ">
+      <img src="img/jihuashu.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
+      <div style="font-size:0.33rem;text-align:center;padding:0.1rem;">
+        计划书
+      </div>
+      <div style="font-size:0.17rem;text-align:center;">
+        破冰版温情细腻，普通版
+        <br>
+        详尽清晰，不同版本搞定<br>
+        不同客户
+      </div>
+    </div>
+    <div class="col-sm-3 no-space pos-r phone-grid ">
+      <img src="img/guihua.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
+      <div style="font-size:0.33rem;text-align:center;padding:0.1rem;">
+        智能规划
+      </div>
+      <div style="font-size:0.17rem;text-align:center;">
+        方案智能规划，帮您选择
+        <br>
+        最划算的组合
+      </div>
+    </div>
+    <div class="col-sm-3 no-space pos-r phone-grid ">
+      <img src="img/duibi.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
+      <div style="font-size:0.33rem;text-align:center;padding:0.1rem;">
+        产品对比
+      </div>
+      <div style="font-size:0.17rem;text-align:center;">
+        真实数据运算，直接让客
+        <br>
+        户看见自身利益，促进产<br>
+        品选择
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top:0.8rem;">
+    <div class="col-sm-3 no-space pos-r phone-grid no-border">
+      <img src="img/zengxian.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
+      <div style="font-size:0.33rem;text-align:center;padding:0.1rem;">
+        免费增险
+      </div>
+      <div style="font-size:0.17rem;text-align:center;">
+        丰富赠险帮助人性化展业
+        <br>
+        提升客户好感度
+      </div>
+    </div>
+    <div class="col-sm-3 no-space pos-r phone-grid">
+      <img src="img/kehu.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
+      <div style="font-size:0.33rem;text-align:center;padding:0.1rem;">
+        客户管理
+      </div>
+      <div style="font-size:0.17rem;text-align:center;">
+        告别沉重的展业夹，客户
+        <br>
+        构成、来源分析助您科学<br>
+        展业
+      </div>
+    </div>
+    <div class="col-sm-3 no-space pos-r phone-grid">
+      <img src="img/xuexi.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
+      <div style="font-size:0.33rem;text-align:center;padding:0.1rem;">
+        干货文章
+      </div>
+      <div style="font-size:0.17rem;text-align:center;">
+        行业热点、理念疏导
+        <br>
+        自学展业两不误
+      </div>
+    </div>
+    <div class="col-sm-3 no-space pos-r phone-grid">
+      <img src="img/shipin.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
+      <div style="font-size:0.33rem;text-align:center;padding:0.1rem;">
+        学习视频
+      </div>
+      <div style="font-size:0.17rem;text-align:center;">
+        视频资源重磅更新
+        <br>
+        行业精英传授经验
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top:1rem;">
+    <div class="col-sm-12 no-space" style="text-align:center;">
+      <img src="img/lijitiyananniu.png" alt="" style="width:3.7rem;height:1.7rem;display:inline-block;">
+      <div style="border:1px solid #1f99f8;border-radius:0.08rem;width:2rem;line-height:0.4rem;font-size:0.22rem;color:#1f99f8;text-align:center;position:relative;left:50%;margin-left:-1rem;display:none;">
+        立刻体验
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 佣金 -->
+<div class="container-fluid zp" style="padding:1rem;background:#f6f6f6;" id="yongjin">
+  <div class="row" style="margin-bottom:0.8rem;">
+    <div class="col-sm-3 no-space phone-title" style="font-size:0.55rem;color:#4e5776;line-height:0.6rem;font-weight:bold;text-align:center;">
+      NO.1佣金
+    </div>
+    <div class="col-sm-9 no-space phone-title-small" style="padding-left:0.3rem;font-size:0.24rem;color:#4e5776;text-align:left;line-height:0.3rem;">
+      国内佣金最高的出台平台，犹豫期结束一次性结算。安全合规、服务周全的同时，坚决不打扰您的客户资源
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12" style="font-size:0.24rem;color:#1f99f8;line-height:0.22rem;text-align:center;font-weight:600">
+      大陆地区（仅限北京）
+    </div>
+  </div>
+  <div class="row phone-row" style="margin-top:0.3rem;">
+    <div class="col-sm-3 no-space phone-grid" style="font-size:0.18rem;font-weight:bold;">
+      <div style="width:3.13rem;height:2.61rem;position:relative;left:50%;margin-left:-1.57rem;background:rgba(0,0,0,0.95);color:white;">
+        <div style="position:absolute;width:100%;height:0.25rem;padding-left:0.5rem;top:0.7rem;"><div style="width:0.1rem;height:0.1rem;background-color:white;border-radius:100%;display:inline-block;margin-right:0.1rem;"></div>77+33种疾病全面防护</div>
+        <div style="position:absolute;width:100%;height:0.25rem;padding-left:0.5rem;top:1.1rem;"><div style="width:0.1rem;height:0.1rem;background-color:white;border-radius:100%;display:inline-block;margin-right:0.1rem;"></div>绿色通道特色服务</div>
+        <div style="position:absolute;width:100%;height:0.25rem;padding-left:0.5rem;top:1.5rem;"><div style="width:0.1rem;height:0.1rem;background-color:white;border-radius:100%;display:inline-block;margin-right:0.1rem;"></div>轻症5次赔付</div>
+      </div>  
+    </div>
+    <div class="col-sm-3 no-space grid phone-grid">
+      <div style="width:3.13rem;height:2.61rem;position:relative;left:50%;margin-left:-1.57rem;">
+        <a href="" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/fulinmentupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
+        <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
+          40%
+        </div>
+        <div style="right:0.17rem;position:absolute;top:0.5rem;height:0.23rem;width:0.75rem;line-height:0.23rem;color:white;background-color:#4d5675;font-size:0.15rem;text-align:center;font-weight:bold;" class="phone-label">
+          最高佣金
+        </div>
+        <div style="font-size:0.21rem;line-height:0.4rem;color:#4e5776;font-weight:bold;">
+          福临门（2015铂金版）
+        </div>
+        <div style="color:#1f99f8;font-weight:bold;font-size:0.15rem;line-height:0.2rem;">
+          华夏人寿
+        </div>
+      </div>  
+    </div>
+    <div class="col-sm-3 no-space grid phone-grid">
+    <div style="width:3.13rem;height:2.61rem;position:relative;left:50%;margin-left:-1.57rem;">
+
+      <a href="" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/changqingshutupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
+      <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
+        65%
+      </div>
+      <div style="right:0.17rem;position:absolute;top:0.5rem;height:0.23rem;width:0.75rem;line-height:0.23rem;color:white;background-color:#4d5675;font-size:0.15rem;text-align:center;font-weight:bold;" class="phone-label">
+        最高佣金
+      </div>
+      <div style="font-size:0.21rem;line-height:0.4rem;color:#4e5776;font-weight:bold;">
+        常青树2015
+      </div>
+      <div style="color:#1f99f8;font-weight:bold;font-size:0.15rem;line-height:0.2rem;">
+        华夏人寿
+      </div>
+      </div>
+    </div>
+    <div class="col-sm-3 no-space grid phone-grid">
+    <div style="width:3.13rem;height:2.61rem;position:relative;left:50%;margin-left:-1.57rem;">
+
+      <a href="" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/kangjianyishengzhongshengzhongjitupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
+      <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
+        75%
+      </div>
+      <div style="right:0.17rem;position:absolute;top:0.5rem;height:0.23rem;width:0.75rem;line-height:0.23rem;color:white;background-color:#4d5675;font-size:0.15rem;text-align:center;font-weight:bold;" class="phone-label">
+        最高佣金
+      </div>
+      <div style="font-size:0.21rem;line-height:0.4rem;color:#4e5776;font-weight:bold;">
+        康健一生终身重疾险
+      </div>
+      <div style="color:#1f99f8;font-weight:bold;font-size:0.15rem;line-height:0.2rem;">
+        同方人寿
+      </div>
+    </div>
+  </div>
+  </div>
+  <div class="row phone-row yongjin-second" style="margin-top:0.14rem;">
+    <div class="col-sm-3 no-space grid phone-grid">
+    <div style="width:3.13rem;height:2.61rem;position:relative;left:50%;margin-left:-1.57rem;">
+      <a href="" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/taikangleankangtupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
+      <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
+        70%
+      </div>
+      <div style="right:0.17rem;position:absolute;top:0.5rem;height:0.23rem;width:0.75rem;line-height:0.23rem;color:white;background-color:#4d5675;font-size:0.15rem;text-align:center;font-weight:bold;" class="phone-label">
+        最高佣金
+      </div>
+      <div style="font-size:0.21rem;line-height:0.4rem;color:#4e5776;font-weight:bold;">
+        泰康乐安康
+      </div>
+      <div style="color:#1f99f8;font-weight:bold;font-size:0.15rem;line-height:0.2rem;">
+        泰康人寿
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-3 no-space grid phone-grid">
+    <div style="width:3.13rem;height:2.61rem;position:relative;left:50%;margin-left:-1.57rem;">
+      <a href="" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/taikangyuexintupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
+      <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
+        40%
+      </div>
+      <div style="right:0.17rem;position:absolute;top:0.5rem;height:0.23rem;width:0.75rem;line-height:0.23rem;color:white;background-color:#4d5675;font-size:0.15rem;text-align:center;font-weight:bold;" class="phone-label">
+        最高佣金
+      </div>
+      <div style="font-size:0.21rem;line-height:0.4rem;color:#4e5776;font-weight:bold;">
+        泰康乐鑫
+      </div>
+      <div style="color:#1f99f8;font-weight:bold;font-size:0.15rem;line-height:0.2rem;">
+        泰康人寿
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-3 no-space grid phone-grid">
+    <div style="width:3.13rem;height:2.61rem;position:relative;left:50%;margin-left:-1.57rem;">
+      <a href="" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/fuyourenshnegtupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
+      <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
+        35%
+      </div>
+      <div style="right:0.17rem;position:absolute;top:0.5rem;height:0.23rem;width:0.75rem;line-height:0.23rem;color:white;background-color:#4d5675;font-size:0.15rem;text-align:center;font-weight:bold;" class="phone-label">
+        最高佣金
+      </div>
+      <div style="font-size:0.21rem;line-height:0.4rem;color:#4e5776;font-weight:bold;">
+        福佑人生
+      </div>
+      <div style="color:#1f99f8;font-weight:bold;font-size:0.15rem;line-height:0.2rem;">
+        弘康人寿
+      </div>
+    </div>
+    </div>
+    <div class="col-sm-3 no-space grid phone-grid">
+    <div style="width:3.13rem;height:2.61rem;position:relative;left:50%;margin-left:-1.57rem;">
+      <a href="" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/jiankangrenshengakuantupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
+      <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
+        60%
+      </div>
+      <div style="right:0.17rem;position:absolute;top:0.5rem;height:0.23rem;width:0.75rem;line-height:0.23rem;color:white;background-color:#4d5675;font-size:0.15rem;text-align:center;font-weight:bold;" class="phone-label">
+        最高佣金
+      </div>
+      <div style="font-size:0.21rem;line-height:0.4rem;color:#4e5776;font-weight:bold;">
+        健康人生A款
+      </div>
+      <div style="color:#1f99f8;font-weight:bold;font-size:0.15rem;line-height:0.2rem;">
+        弘康人寿
+      </div>
+    </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top:0.6rem;">
+    <div class="col-sm-12" style="font-size:0.24rem;color:#1f99f8;line-height:0.22rem;text-align:center;font-weight:600" id="xianggangbaoxian">
+      香港保险（全国通用）
+    </div>
+  </div>
+  <div class="row" style="margin-top:0.3rem;">
+    <div class="col-sm-4 no-space">
+      <div style="background:rgba(0,0,0,0.95);width:4.2rem;height:2.61rem;color:white;font-size:0.18rem;font-weight:bold;margin-left:auto;margin-right:auto;position:relative;">
+        <div style="position:absolute;width:100%;height:0.25rem;padding-left:0.5rem;top:0.7rem;"><div style="width:0.1rem;height:0.1rem;background-color:white;border-radius:100%;display:inline-block;margin-right:0.1rem;"></div>77+33种疾病全面防护</div>
+        <div style="position:absolute;width:100%;height:0.25rem;padding-left:0.5rem;top:1.1rem;"><div style="width:0.1rem;height:0.1rem;background-color:white;border-radius:100%;display:inline-block;margin-right:0.1rem;"></div>绿色通道特色服务</div>
+        <div style="position:absolute;width:100%;height:0.25rem;padding-left:0.5rem;top:1.5rem;"><div style="width:0.1rem;height:0.1rem;background-color:white;border-radius:100%;display:inline-block;margin-right:0.1rem;"></div>轻症5次赔付</div>
+      </div>
+    </div>
+    <div class="col-sm-4 no-space grid xianggang">
+      <div style="width:4.2rem;height:2.61rem;margin-left:auto;margin-right:auto;position:relative;">
+        <a href="" style="width:4.2rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/taowang.png" alt="" style="width:4.2rem;height:1.93rem;" class="thumb active" title="image"></a>
+        <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
+          X%
+        </div>
+        <div style="right:0.17rem;position:absolute;top:0.5rem;height:0.23rem;width:0.75rem;line-height:0.23rem;color:white;background-color:#4d5675;font-size:0.15rem;text-align:center;font-weight:bold;" class="phone-label">
+          最高佣金
+        </div>
+        <div style="font-size:0.21rem;line-height:0.4rem;color:#4e5776;font-weight:bold;">
+          XX倍安保（加强版）
+        </div>
+        <div style="color:#1f99f8;font-weight:bold;font-size:0.15rem;line-height:0.2rem;">
+          友邦AIA
+        </div>
+      </div>
+    </div>
+    <div class="col-sm-4 no-space grid xianggang" >
+      <div style="width:4.2rem;height:2.61rem;margin-left:auto;margin-right:auto;position:relative;">
+        <a href="" style="width:4.2rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/taowang.png" alt="" style="width: 4.2rem;height:1.93rem;" class="thumb active" title="image"></a>
+        <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
+          X%
+        </div>
+        <div style="right:0.17rem;position:absolute;top:0.5rem;height:0.23rem;width:0.75rem;line-height:0.23rem;color:white;background-color:#4d5675;font-size:0.15rem;text-align:center;font-weight:bold;" class="phone-label">
+          最高佣金
+        </div>
+        <div style="font-size:0.21rem;line-height:0.4rem;color:#4e5776;font-weight:bold;">
+          进泰XX保2
+        </div>
+        <div style="color:#1f99f8;font-weight:bold;font-size:0.15rem;line-height:0.2rem;">
+          友邦AIA
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top:1rem;">
+    <div class="col-sm-12 no-space" style="text-align:center;">
+      <img src="img/lijitiyananniu.png" alt="" style="width:3.7rem;height:1.7rem;display:inline-block;">
+      <div style="border:1px solid #1f99f8;border-radius:0.08rem;width:2rem;line-height:0.4rem;font-size:0.22rem;color:#1f99f8;text-align:center;position:relative;left:50%;margin-left:-1rem;display:none;">
+        立刻体验
+      </div>
+    </div>
+  </div>
+</div>
+<!-- 常见问题 -->
+<div class="container-fluid zp phone-container" style="background: rgba(255,255,255,0.85);position:relative;padding-bottom:1.9rem;" id="wenti">
+  <div class="row" style="margin-bottom:0.8rem;">
+    <div class="col-sm-12 no-space" style="font-size:0.55rem;color:#4e5776;line-height:0.5rem;font-weight:bold;text-align:center;">
+      常见问题
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-sm-12">
+      <div style="width:2.2rem;height:0.4rem;line-height:0.4rem;text-align:left;font-weight:bold;background-color:#1f99f8;color:white;left:50%;margin-left:-1rem;position:relative;padding-left:0.08rem;font-size:0.2rem;" class="wenti-1-q">
+        Q : 软件是免费的吗？
+      </div>
+      <div style="line-height:0.3rem;text-align:left;font-weight:bold;left:50%;margin-left:-1rem;position:relative;width:7rem;padding:0.2rem 0;height:0.8rem;font-size:0.2rem;" class="wenti-1-a">
+        <div style="float:left;width:0.34rem;">
+          A :
+        </div>
+        <div style="float:left;" class="text-pc">
+          保险神器是永久免费的展业App，所有功能都不会收取任何费用，
+          <br>
+          我们旨在帮助代理人提高工作效率，请放心使用。
+        </div>
+        <div style="float:left;" class="text-phone">
+          保险神器是永久免费的展业App，所有功能都不会收取任何<br>费用，我们旨在帮助代理人提高工作效率，请放心使用。
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top:0.3rem;">
+    <div class="col-sm-12">
+      <div style="width:2.2rem;height:0.4rem;line-height:0.4rem;text-align:left;font-weight:bold;background-color:#1f99f8;color:white;left:50%;margin-left:-1rem;position:relative;padding-left:0.08rem;font-size:0.2rem;" class="wenti-2-q">
+        Q : 佣金是怎么算的？
+      </div>
+      <div style="line-height:0.3rem;text-align:left;font-weight:bold;left:50%;margin-left:-1rem;position:relative;width:8rem;padding:0.2rem 0;height:0.8rem;font-size:0.2rem;" class="wenti-2-a">
+        <div style="float:left;width:0.34rem;">
+          A :
+        </div>
+        <div style="float:left;" class="text-pc">
+          第一，我们取消了捆绑代理人的“续佣”制度，所有佣金犹豫期结束后立刻结算。
+          <br>
+          第二，我们取消了保险行业饱受诟病的“层层抽成”，满额佣金直接发放给一线代理人。
+        </div>
+        <div style="float:left;" class="text-phone">
+          第一，我们取消了捆绑代理人的“续佣”制度，所有佣金犹豫<br>期结束后立刻结算。<br><br>第二，我们取消了保险行业饱受诟病的“层层抽成”，满额佣<br>金直接发放给一线代理人。
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row" style="margin-top:0.3rem;">
+    <div class="col-sm-12">
+      <div style="width:2.6rem;height:0.4rem;line-height:0.4rem;text-align:left;font-weight:bold;background-color:#1f99f8;color:white;left:50%;margin-left:-1rem;position:relative;padding-left:0.08rem;font-size:0.2rem;" class="wenti-3-q">
+        Q : 佣金比例具体是多少？
+      </div>
+      <div style="line-height:0.3rem;text-align:left;font-weight:bold;left:50%;margin-left:-1rem;position:relative;width:7.5rem;padding:0.2rem 0;height:0.8rem;font-size:0.2rem;" class="wenti-3-a">
+        <div style="float:left;width:0.34rem;">
+          A :
+        </div>
+        <div style="float:left;">
+          不同产品在不同缴费方式下，有不同的佣金标准。
+          <br>
+          详情欢迎垂询专业顾问：
+          <span style="font-size:0.25rem;line-height:0.4rem;">188-1070-0624</span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <img src="img/shouji1.png" id="shouji1" alt="" style="position:absolute;top:2rem;height:4.71rem;z-index:100;left:1.5rem;">
+  <img src="img/shouji2.png" id="shouji2" alt="" style="position:absolute;top:2.2rem;height:4.3rem;left:3.5rem;z-index:99;">
+</div>
+<!-- 专业团队 -->
+<div class="container-fluid zp phone-container" style="position:relative;height:10rem;background:url('img/zhuanyetuandui.png'); background-attachment:fixed;background-position:center;background-size:100% 100%;background-repeat:no-repeat;" id="tuandui">
+  <div style="background:rgba(36,44,66,0.90);position:absolute;width:100%;height:10rem;top:0;left:0;">
+  </div>
+  <div class="row" style="margin-bottom:0.6rem;">
+    <div class="col-sm-12 no-space" style="font-size:0.55rem;color:white;line-height:0.5rem;font-weight:bold;text-align:center;">
+       专业团队
+    </div>
+  </div>
+  <div class="row founder" style="height:3.8rem;">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-5 pengpeng">
+      <div></div>
+      <div>彭鹏  ｜  CEO & 创始人</div>
+      <div>美国精算、金融双学士、北美SOA精算师协会会员<br>友邦AIA精算师、美国MetLife理财规划师<br>顾问式理财规划培训师</div>
+    </div>
+    <div class="col-sm-5 pengpeng" style="position:relative;">
+      <div></div>
+      <div>王浩宇  ｜  联合创始人</div>
+      <div>美国精算、金融双学士、北美SOA精算师协会会员<br>友邦AIA精算师、美国MetLife理财规划师<br>顾问式理财规划培训师</div>
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+  <div class="row jieshao">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-10" style="border:1px solid #ffffff;border-radius:0.08rem;font-size:0.2rem;color:white;line-height:0.3rem;padding:0.4rem 0.33rem;">
+      保险神器的诞生是大量优秀人才共同努力的结果。从嗅觉敏锐的创投老兵，到海归精算师团队，从精良的工程师队伍，到久经沙场的一线代理人顾问。我们夜以继日、各展所长，只为了做出更好用的展业工具。神器的成长之路还很长，在这条路上，大家的批评、建议、鼓励都是我们宝贵的财富。所以真正的神器团队，是你们！
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+</div>
+<!-- 合作机构 -->
+<div class="container-fluid zp phone-container" style="position:relative;padding-left:0.5rem;padding-right:0.5rem;" id="hezuo">
+  <div class="row" style="margin-bottom:1rem;">
+    <div class="col-sm-12 no-space" style="font-size:0.55rem;color:white;line-height:0.5rem;font-weight:bold;text-align:center;padding-top:0.4rem;">
+      合作机构
+    </div>
+  </div>
+  <div class="row phone-row-label">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-2 three-logo">
+      <img src="img/zhongguorenshou.png" alt="" style="width:2.25rem;height:1.6rem;">
+    </div>
+    <div class="col-sm-2 three-logo">
+      <img src="img/zhongguopingan.png" alt="" style="width:2.25rem;height:1.6rem;">
+    </div>
+    <div class="col-sm-2 three-logo">
+      <img src="img/xinhuabaoxian.png" alt="" style="width:2.25rem;height:1.6rem;">
+    </div>
+    <div class="col-sm-2 two-logo">
+      <img src="img/zhongguotaiping.png" alt="" style="width:2.25rem;height:1.6rem;">
+    </div>
+    <div class="col-sm-2 two-logo">
+      <img src="img/taipingyangbaoxian.png" alt="" style="width:2.25rem;height:1.6rem;">
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+  <div class="row phone-row-label" style="margin-top:0.4rem;">
+    <div class="col-sm-1">
+    </div>
+    <div class="col-sm-2 three-logo">
+      <img src="img/taikangrenshou.png" alt="" style="width:2.25rem;height:1.6rem;">
+    </div>
+    <div class="col-sm-2 three-logo">
+      <img src="img/huaxiabaoxian.png" alt="" style="width:2.25rem;height:1.6rem;">
+    </div>
+    <div class="col-sm-2 three-logo">
+      <img src="img/tongfangquanqiurenshou.png" alt="" style="width:2.25rem;height:1.6rem;">
+    </div>
+    <div class="col-sm-2 two-logo">
+      <img src="img/hongkangrenshou.png" alt="" style="width:2.25rem;height:1.6rem;">
+    </div>
+    <div class="col-sm-2 two-logo">
+      <img src="img/dingdingbaodai.png" alt="" style="width:2.25rem;height:1.6rem;">
+    </div>
+    <div class="col-sm-1">
+    </div>
+  </div>
+</div>
+<!-- 底部链接 -->
+<div class="container-fluid zp phone-container" style="background:#2a2a2a;position:relative;padding-top:0.5rem;color:white;padding-bottom:0.5rem;top:0.9rem" id="lianjie">
+  <div class="row" style="padding-left:0.6rem;padding-right:0.2rem;">
+    <div class="col-sm-4 email" style="font-size:0.15rem;padding-top:0.35rem;height:1.53rem;">
+      <div style="line-height:0.3rem;">
+        <img src="img/youjian.png" style="width:0.24rem;height:0.24rem;margin-right:0.1rem;" alt="">咨询邮箱：fanshen@financingfeature.com
+      </div>
+      <div style="line-height:0.3rem;">
+        <img src="img/zhaopin.png" style="width:0.24rem;height:0.24rem;margin-right:0.1rem;" alt="">招聘邮箱：luzhihui@financingfeature.com
+      </div>
+      <div style="color:#848484;position:relative;font-size:0.14rem;top:0.3rem;">
+        ©北京财未来科技有限公司2015版权所有
+      </div>
+    </div>
+    <div class="col-sm-4 contact" style="font-size:0.15rem;padding-top:0.35rem;">
+      <div style="line-height:0.3rem;">
+        <img src="img/weixin.png" style="width:0.24rem;height:0.24rem;margin-right:0.1rem;" alt="">客服微信：baoxianshenqi001
+      </div>
+      <div style="line-height:0.3rem;">
+        <img src="img/qq.png" style="width:0.24rem;height:0.24rem;margin-right:0.1rem;" alt="">官方QQ群：12345678901
+      </div>
+    </div>
+    <div class="col-sm-4 qrcode">
+      <div class="col-sm-6 phone-grid" style="text-align:center;">
+        <img src="img/gongzhonghao.png" alt="" style="width:1.25rem;height:1.23rem;display:inline-block;">
+        <div style="font-size:0.15rem;line-height:0.3rem;">
+          微信关注我们
+        </div>
+      </div>
+      <div class="col-sm-6 phone-grid" style="text-align:center;">
+        <img src="img/xiazailianjie.png" alt="" style="width:1.25rem;height:1.23rem;display:inline-block;">
+        <div style="font-size:0.15rem;line-height:0.3rem;">
+          IOS&Android
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- Resource jQuery -->
+<script src="js/main.js"></script>
+<script src="js/scrollReveal.min.js"></script>
+<script src="js/parallax.js" defer=""></script>
+<script type="text/javascript">
+      (function($) {
+        'use strict';
+        window.sr= new scrollReveal({
+          reset: false,
+          move: '50px',
+          mobile: false
+        });
+      })();
+</script>
+<script>
+    var $window = $(window)
+    var $mainTittle = $('#mainTittle')
+    var $topBanner = $('#topBanner')
+    var $lTittle = $('.l-tittle')
+
+
+    $window.scroll(function(event){
+      var currentTop = $window.scrollTop();
+      // console.log(currentTop)
+
+      if(currentTop!=0){
+        $topBanner.css('background','rgba(0,0,0,0.8)');
+        $mainTittle.css('font-size','0.4rem')
+        $mainTittle.addClass('p-b-1')
+        $lTittle.removeClass('phone-show')
+      }else{
+        $topBanner.css('background','rgba(0,0,0,0)');
+        $mainTittle.removeClass('p-b-1')
+        $mainTittle.css('font-size','0.5rem')
+        $lTittle.addClass('phone-show')
+      }
+    });
+
+    function toModule(id){
+      var top = $('#'+id).offset().top;
+      if(id=="mainTittle"){
+        top = 0        
+      }
+      $("html,body").animate({scrollTop:top},1000);
+    }
+</script>
+</body>
+</html>
+</body>
+</html>
