@@ -5,16 +5,13 @@
 <title>保险神器</title>
 <meta name="description" content="JDC Design Studio is a personal online portfolio, visual playground and testing ground of Jessie Daryl Cacafranca. Most of the showcased work are web, graphics, and photography."/>
 <meta name="keywords" content="Web Design, Graphic Design, Photography, Cebu, Philippines, Saudi Arabia, UX Designer, Digital Specialist, Social Media"/>
-<link rel="stylesheet" href="css/bootstrap.min.css">
-<link rel="stylesheet" href="css/slippry.css">
-<link rel="stylesheet" href="css/style.css">
-<link rel="stylesheet" href="css/animate.min.css">
+
+<script src="http://7xq93s.com2.z0.glb.qiniucdn.com/jquery.min.2.1.4.js"></script>
+
 <script type="text/javascript">
   var phoneWidth = parseInt(window.screen.width);
   var titleArr = []
-
   if(phoneWidth<1000){
-
     titleArr.push("互联网＋保险的探索者，<br>致力于创造最好用的展业工具")
     var phoneScale = phoneWidth/375;
     console.log(phoneScale)
@@ -33,12 +30,13 @@
         titleArr.push("互联网＋保险的探索者，致力于创造最好用的展业工具")
         document.write('<meta name="viewport" content="width=device-width, initial-scale=1">');
   }
-  
 </script>
-<script src="js/analytics.js"></script>
-<script src="js/jquery.min.js"></script>
+
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/slippry.css">
+<link rel="stylesheet" href="css/style.css">
+
 <script src="js/bootstrap.min.js"></script>
-<script src="js/preloader.min.js"></script>
 
 <script src="js/modernizr.js"></script>
 <!-- Modernizr -->
@@ -108,7 +106,7 @@
          pause: 9000,
          auto: true,
          controls: false,
-         preload: 'visible',
+         // preload: 'visible',
          autoHover: false
       });
     });
@@ -669,10 +667,10 @@
   </div>
 </div>
 <!-- Resource jQuery -->
-<script src="js/main.js"></script>
-<script src="js/scrollReveal.min.js"></script>
-<script src="js/parallax.js" defer=""></script>
-<script type="text/javascript">
+<!-- <script src="js/main.js"></script> -->
+<!-- <script src="js/scrollReveal.min.js"></script> -->
+<!-- <script src="js/parallax.js" defer=""></script> -->
+<!-- <script type="text/javascript">
       (function($) {
         'use strict';
         window.sr= new scrollReveal({
@@ -681,7 +679,7 @@
           mobile: false
         });
       })();
-</script>
+</script> -->
 <script>
     var $window = $(window)
     var $mainTittle = $('#mainTittle')
