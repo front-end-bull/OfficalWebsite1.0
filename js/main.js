@@ -33,21 +33,30 @@ require.config({
 
 require(["jquery","typed"],function($,typed){
 
-    $(".element").typed({
-      strings:titleArr,
-      typeSpeed: 70,
-      showCursor: false
-    });
+    var screenWidth = $(window).width()
 
+    var titleArr = []
 
     $(function(){
-        if(!isPhone){
+
+        if(screenWidth>800){
+          titleArr.push("互联网＋保险的探索者，致力于创造最好用的展业工具")
+        }else{
+          titleArr.push("互联网＋保险的探索者，<br>致力于创造最好用的展业工具")
+        }
+
+        $(".element").typed({
+          strings:titleArr,
+          typeSpeed: 70,
+          showCursor: false
+        });
+
+        if(screenWidth>800){
             $('.lazy-css').each(
                 function(){
                 $(this).attr("src",$(this).attr("lazy-src")).removeAttr("lazy-src")
             });
         }
-        
     });
 
     require(["slippry","bootstrap"],function(){

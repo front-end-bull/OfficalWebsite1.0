@@ -1,3 +1,4 @@
+
   html{
     font-size: 100px;
   }
@@ -263,6 +264,7 @@ a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f
 @media only screen and (max-width: 768px){
   html{font-size: 50px;}
 
+
   #hezuo{
     background: #f5f5f5;
     padding-bottom: 2.9rem !important;
@@ -279,7 +281,7 @@ a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f
   #hezuo div{
     color:#4e5776 !important;
   }
-  #header{ background: url(../bg/3.jpg) center center no-repeat!important; -webkit-background-size: auto !important; -moz-background-size: auto !important; -o-background-size: auto !important; background-size: auto !important; min-height: auto!important;  }
+  #header{ background: url('../img/bg.jpg') no-repeat!important; -webkit-background-size: cover !important; -moz-background-size: cover !important; -o-background-size: cover !important; background-size: cover !important; min-height: auto!important;  }
   
   #wenti .row:nth-child(1) {
     padding-top: 1.5rem;
@@ -438,6 +440,7 @@ a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f
   .element{
     font-size: 0.5rem !important;
     line-height: 0.8rem !important;
+    min-height: 1.6rem !important;
   }
   .phone-hidden{
     // visibility: hidden;
