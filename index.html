@@ -3,11 +3,8 @@
 <head>
 <meta charset="utf-8">
 <title>保险神器</title>
-<meta name="description" content="JDC Design Studio is a personal online portfolio, visual playground and testing ground of Jessie Daryl Cacafranca. Most of the showcased work are web, graphics, and photography."/>
-<meta name="keywords" content="Web Design, Graphic Design, Photography, Cebu, Philippines, Saudi Arabia, UX Designer, Digital Specialist, Social Media"/>
-
-<script src="http://7xq93s.com2.z0.glb.qiniucdn.com/jquery.min.2.1.4.js"></script>
-
+<meta name="keywords" content="保险 财未来 保险神器 财未来保险 计划书  保险展业 保险产品 保险资讯 保险工具 赠险">
+<meta name="description" content="保险神器是一款涵盖展业、增员、客户新增等功能的保险行业应用，致力于为全国300余万保险人提供全方位的贴心服务">
 <script type="text/javascript">
   var phoneWidth = parseInt(window.screen.width);
   var titleArr = []
@@ -36,57 +33,24 @@
 <link rel="stylesheet" href="css/slippry.css">
 <link rel="stylesheet" href="css/style.css">
 
-<script src="js/bootstrap.min.js"></script>
-
-<script src="js/modernizr.js"></script>
-<!-- Modernizr -->
-<script src="js/slippry.js"></script>
-<!-- slideshow -->
-<script src="js/typed.js"></script>
-<!-- type ani -->
-<script>
-    $(function(){
-        $(".element").typed({
-          strings:titleArr,
-          typeSpeed: 70,
-          showCursor: false
-        });
-    });
-</script>
-<script>
-    $(function() {  
-      $('a[href*=#]:not([href=#])').click(function() {
-        if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-          var target = $(this.hash);
-          target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-          if (target.length) {
-            $('html,body').animate({
-              scrollTop: target.offset().top
-            }, 1000);
-            return false;
-          }
-        }
-      });
-    });
-</script>
-<style>
-   [data-sr] { visibility: hidden; }
-</style>
+<script src="js/require.js" data-main="js/main.js" defer async="true"></script>
+<!-- <script src="http://7xq93s.com2.z0.glb.qiniucdn.com/jquery.min.2.1.4.js"></script> -->
+<script src="js/jquery.min.js"></script>
 </head>
 <body id="dummybodyid">
 <div class="bar">
 </div>
-<div class="sy-box">
+<div class="sy-box text-pc">
   <div class="sy-slides-wrap">
     <div class="sy-slides-crop">
       <ul id="slider" style="list-style: none; width: 100%; height: 100%; padding: 0; margin: 0;" class="hde sy-list">
-        <li class="sy-slide kenburns useCSS" style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img src="bg/2.jpg"></li>
+        <li class="sy-slide kenburns useCSS " style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img class="lazy-css" lazy-src="bg/2.jpg"></li>
         <li class="sy-slide kenburns useCSS sy-ken sy-active" style="transition-duration: 5000ms; opacity: 1; animation-duration: 19000ms;"><img src="bg/3.jpg"></li>
-        <li class="sy-slide kenburns useCSS" style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img src="bg/1.jpg"></li>
-        <li class="sy-slide kenburns useCSS" style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img src="bg/4.jpg"></li>
-        <li class="sy-slide kenburns useCSS" style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img src="bg/5.jpg"></li>
-        <li class="sy-slide kenburns useCSS" style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img src="bg/7.jpg"></li>
-        <li class="sy-slide kenburns useCSS" style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img src="bg/6.jpg"></li>
+        <li class="sy-slide kenburns useCSS " style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img class="lazy-css" lazy-src="bg/1.jpg"></li>
+        <li class="sy-slide kenburns useCSS " style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img class="lazy-css" lazy-src="bg/4.jpg"></li>
+        <li class="sy-slide kenburns useCSS " style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img class="lazy-css" lazy-src="bg/5.jpg"></li>
+        <li class="sy-slide kenburns useCSS " style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img class="lazy-css" lazy-src="bg/7.jpg"></li>
+        <li class="sy-slide kenburns useCSS " style="transition-duration: 5000ms; opacity: 0; animation-duration: 19000ms;"><img class="lazy-css" lazy-src="bg/6.jpg"></li>
       </ul>
     </div>
     <div class="sy-caption-wrap">
@@ -97,20 +61,6 @@
     </div>
   </div>
 </div>
-<script>
-    $(function() {
-      var demo1 = $("#slider").slippry({
-         transition: 'kenburns',
-         useCSS: true,
-         speed: 5000,
-         pause: 9000,
-         auto: true,
-         controls: false,
-         // preload: 'visible',
-         autoHover: false
-      });
-    });
-  </script>
 <!-- header  -->
 <div id="topBanner">
     <div id="mainTittle" onclick="toModule('mainTittle')">保险神器</div>
@@ -129,21 +79,11 @@
         <h1 class="element" style="font-size:0.55rem;color:white;">互联网＋保险的探索者，致力于创造最好用的展业工具</h1>
         <span style="font-size:0.27rem;color:white;" class="phone-hidden">我们服务全国500万保险代理人，帮助他们更智能、更快捷、更专业的工作</span>
         <div  class="download">
-          <img src="img/iphone.png" alt="" >
-          <img src="img/android.png" alt="" >
-          <img src="img/xiazailianjie.png" alt="">
+          <img  src="img/iphone.png" alt="" >
+          <img  src="img/android.png" alt="" >
+          <img  src="img/xiazailianjie.png" alt="">
         </div>
-      <!--   <div style="position:relative;width:3.88rem;height:1.3rem;border-radius:0.08rem;left:50%;margin-left:-1.94rem;top:1.2rem;">
-          <img src="img/iphone.png" alt="" style="width:2.38rem;height:0.55rem;position:absolute;top:0;left:0;">
-          <img src="img/android.png" alt="" style="width:2.38rem;height:0.55rem;position:absolute;top:0.7rem;left:0;">
-          <img src="img/xiazailianjie.png" alt="" style="width:1.3rem;height:1.3rem;position:absolute;top:0;right:0;">
-        </div> -->
-
-      <!--   <p class="m-button">
-          <a href="http://www.jdcdesignstudio.com/docs/JDC-Resume.pdf" class="ghost-button" target="_blank">CV</a> &nbsp; <a href="http://www.jdcdesignstudio.com/docs/JDC-Portfolio.pdf" class="ghost-button" target="_blank">Portfolio</a>
-        </p> -->
         <div id="mice" style="">
-          <!-- <a href="http://www.jdcdesignstudio.com/#scroll"> -->
           <div class="mouse">
             <div class="wheel">
             </div>
@@ -151,7 +91,6 @@
           <div>
             <span class="unu"></span><span class="doi"></span>
           </div>
-          <!-- </a> -->
         </div>
       </div>
     </div>
@@ -169,7 +108,7 @@
   </div>
   <div class="row">
     <div class="col-sm-3 no-space pos-r phone-grid ">
-      <img src="img/feilvjisuan.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
+      <img  src="img/feilvjisuan.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
       <div style="font-size:0.33rem;text-align:center;padding:0.1rem;" id="feilvjisuan">
         费率计算
       </div>
@@ -180,7 +119,7 @@
       </div>
     </div>
     <div class="col-sm-3 no-space pos-r phone-grid ">
-      <img src="img/jihuashu.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
+      <img  src="img/jihuashu.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
       <div style="font-size:0.33rem;text-align:center;padding:0.1rem;">
         计划书
       </div>
@@ -192,7 +131,7 @@
       </div>
     </div>
     <div class="col-sm-3 no-space pos-r phone-grid ">
-      <img src="img/guihua.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
+      <img  src="img/guihua.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
       <div style="font-size:0.33rem;text-align:center;padding:0.1rem;">
         智能规划
       </div>
@@ -203,7 +142,7 @@
       </div>
     </div>
     <div class="col-sm-3 no-space pos-r phone-grid ">
-      <img src="img/duibi.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
+      <img  src="img/duibi.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
       <div style="font-size:0.33rem;text-align:center;padding:0.1rem;">
         产品对比
       </div>
@@ -217,7 +156,7 @@
   </div>
   <div class="row" style="margin-top:0.8rem;">
     <div class="col-sm-3 no-space pos-r phone-grid no-border">
-      <img src="img/zengxian.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
+      <img  src="img/zengxian.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
       <div style="font-size:0.33rem;text-align:center;padding:0.1rem;">
         免费增险
       </div>
@@ -228,7 +167,7 @@
       </div>
     </div>
     <div class="col-sm-3 no-space pos-r phone-grid">
-      <img src="img/kehu.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
+      <img  src="img/kehu.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
       <div style="font-size:0.33rem;text-align:center;padding:0.1rem;">
         客户管理
       </div>
@@ -240,7 +179,7 @@
       </div>
     </div>
     <div class="col-sm-3 no-space pos-r phone-grid">
-      <img src="img/xuexi.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
+      <img  src="img/xuexi.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
       <div style="font-size:0.33rem;text-align:center;padding:0.1rem;">
         干货文章
       </div>
@@ -251,7 +190,7 @@
       </div>
     </div>
     <div class="col-sm-3 no-space pos-r phone-grid">
-      <img src="img/shipin.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
+      <img  src="img/shipin.png" alt="" style="height:1.4rem;width:1.4rem;position:relative;left:50%;margin-left:-0.7rem;border-radius:100%;">
       <div style="font-size:0.33rem;text-align:center;padding:0.1rem;">
         学习视频
       </div>
@@ -264,7 +203,7 @@
   </div>
   <div class="row" style="margin-top:1rem;">
     <div class="col-sm-12 no-space" style="text-align:center;">
-      <img src="img/lijitiyananniu.png" alt="" style="width:3.7rem;height:1.7rem;display:inline-block;">
+      <img  src="img/lijitiyananniu.png" alt="" style="width:3.7rem;height:1.7rem;display:inline-block;">
       <div style="border:1px solid #1f99f8;border-radius:0.08rem;width:2rem;line-height:0.4rem;font-size:0.22rem;color:#1f99f8;text-align:center;position:relative;left:50%;margin-left:-1rem;display:none;">
         立刻体验
       </div>
@@ -296,7 +235,7 @@
     </div>
     <div class="col-sm-3 no-space grid phone-grid">
       <div style="width:3.13rem;height:2.61rem;position:relative;left:50%;margin-left:-1.57rem;">
-        <a href="" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/fulinmentupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
+        <a href="javascript:void(0)" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img  src="img/fulinmentupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
         <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
           40%
         </div>
@@ -314,7 +253,7 @@
     <div class="col-sm-3 no-space grid phone-grid">
     <div style="width:3.13rem;height:2.61rem;position:relative;left:50%;margin-left:-1.57rem;">
 
-      <a href="" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/changqingshutupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
+      <a href="javascript:void(0)" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img  src="img/changqingshutupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
       <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
         65%
       </div>
@@ -332,7 +271,7 @@
     <div class="col-sm-3 no-space grid phone-grid">
     <div style="width:3.13rem;height:2.61rem;position:relative;left:50%;margin-left:-1.57rem;">
 
-      <a href="" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/kangjianyishengzhongshengzhongjitupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
+      <a href="javascript:void(0)" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img  src="img/kangjianyishengzhongshengzhongjitupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
       <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
         75%
       </div>
@@ -351,7 +290,7 @@
   <div class="row phone-row yongjin-second" style="margin-top:0.14rem;">
     <div class="col-sm-3 no-space grid phone-grid">
     <div style="width:3.13rem;height:2.61rem;position:relative;left:50%;margin-left:-1.57rem;">
-      <a href="" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/taikangleankangtupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
+      <a href="javascript:void(0)" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img  src="img/taikangleankangtupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
       <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
         70%
       </div>
@@ -368,7 +307,7 @@
     </div>
     <div class="col-sm-3 no-space grid phone-grid">
     <div style="width:3.13rem;height:2.61rem;position:relative;left:50%;margin-left:-1.57rem;">
-      <a href="" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/taikangyuexintupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
+      <a href="javascript:void(0)" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img  src="img/taikangyuexintupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
       <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
         40%
       </div>
@@ -385,7 +324,7 @@
     </div>
     <div class="col-sm-3 no-space grid phone-grid">
     <div style="width:3.13rem;height:2.61rem;position:relative;left:50%;margin-left:-1.57rem;">
-      <a href="" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/fuyourenshnegtupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
+      <a href="javascript:void(0)" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img  src="img/fuyourenshnegtupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
       <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
         35%
       </div>
@@ -402,7 +341,7 @@
     </div>
     <div class="col-sm-3 no-space grid phone-grid">
     <div style="width:3.13rem;height:2.61rem;position:relative;left:50%;margin-left:-1.57rem;">
-      <a href="" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/jiankangrenshengakuantupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
+      <a href="javascript:void(0)" style="width:3.13rem;height:1.93rem;display:block;overflow:hidden;"><img  src="img/jiankangrenshengakuantupian.png" alt="" style="width:3.13rem;height:1.93rem;" class="thumb active" title="image"></a>
       <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
         60%
       </div>
@@ -433,7 +372,7 @@
     </div>
     <div class="col-sm-4 no-space grid xianggang">
       <div style="width:4.2rem;height:2.61rem;margin-left:auto;margin-right:auto;position:relative;">
-        <a href="" style="width:4.2rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/taowang.png" alt="" style="width:4.2rem;height:1.93rem;" class="thumb active" title="image"></a>
+        <a href="javascript:void(0)" style="width:4.2rem;height:1.93rem;display:block;overflow:hidden;"><img  src="img/taowang.png" alt="" style="width:4.2rem;height:1.93rem;" class="thumb active" title="image"></a>
         <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
           X%
         </div>
@@ -450,7 +389,7 @@
     </div>
     <div class="col-sm-4 no-space grid xianggang" >
       <div style="width:4.2rem;height:2.61rem;margin-left:auto;margin-right:auto;position:relative;">
-        <a href="" style="width:4.2rem;height:1.93rem;display:block;overflow:hidden;"><img src="img/taowang.png" alt="" style="width: 4.2rem;height:1.93rem;" class="thumb active" title="image"></a>
+        <a href="javascript:void(0)" style="width:4.2rem;height:1.93rem;display:block;overflow:hidden;"><img  src="img/taowang.png" alt="" style="width: 4.2rem;height:1.93rem;" class="thumb active" title="image"></a>
         <div style="position:absolute;top:0;right:0.17rem;width:0.75rem;height:0.5rem;background-color:#1f99f8;color:white;line-height:0.5rem;text-align:center;font-size:0.27rem;" class="phone-label">
           X%
         </div>
@@ -468,7 +407,7 @@
   </div>
   <div class="row" style="margin-top:1rem;">
     <div class="col-sm-12 no-space" style="text-align:center;">
-      <img src="img/lijitiyananniu.png" alt="" style="width:3.7rem;height:1.7rem;display:inline-block;">
+      <img  src="img/lijitiyananniu.png" alt="" style="width:3.7rem;height:1.7rem;display:inline-block;">
       <div style="border:1px solid #1f99f8;border-radius:0.08rem;width:2rem;line-height:0.4rem;font-size:0.22rem;color:#1f99f8;text-align:center;position:relative;left:50%;margin-left:-1rem;display:none;">
         立刻体验
       </div>
@@ -540,11 +479,11 @@
       </div>
     </div>
   </div>
-  <img src="img/shouji1.png" id="shouji1" alt="" style="position:absolute;top:2rem;height:4.71rem;z-index:100;left:1.5rem;">
-  <img src="img/shouji2.png" id="shouji2" alt="" style="position:absolute;top:2.2rem;height:4.3rem;left:3.5rem;z-index:99;">
+  <img  src="img/shouji1.png" id="shouji1" alt="" style="position:absolute;top:2rem;height:4.71rem;z-index:100;left:1.5rem;">
+  <img  src="img/shouji2.png" id="shouji2" alt="" style="position:absolute;top:2.2rem;height:4.3rem;left:3.5rem;z-index:99;">
 </div>
 <!-- 专业团队 -->
-<div class="container-fluid zp phone-container" style="position:relative;height:10rem;background:url('img/zhuanyetuandui.png'); background-attachment:fixed;background-position:center;background-size:100% 100%;background-repeat:no-repeat;" id="tuandui">
+<div class="container-fluid zp phone-container" style="position:relative;height:10rem;background:url('img/zhuanyetuandui.jpg'); background-attachment:fixed;background-position:center;background-size:cover;background-repeat:no-repeat;" id="tuandui">
   <div style="background:rgba(36,44,66,0.90);position:absolute;width:100%;height:10rem;top:0;left:0;">
   </div>
   <div class="row" style="margin-bottom:0.6rem;">
@@ -589,19 +528,19 @@
     <div class="col-sm-1">
     </div>
     <div class="col-sm-2 three-logo">
-      <img src="img/zhongguorenshou.png" alt="" style="width:2.25rem;height:1.6rem;">
+      <img  src="img/zhongguorenshou.png" alt="" style="width:2.25rem;height:1.6rem;">
     </div>
     <div class="col-sm-2 three-logo">
-      <img src="img/zhongguopingan.png" alt="" style="width:2.25rem;height:1.6rem;">
+      <img  src="img/zhongguopingan.png" alt="" style="width:2.25rem;height:1.6rem;">
     </div>
     <div class="col-sm-2 three-logo">
-      <img src="img/xinhuabaoxian.png" alt="" style="width:2.25rem;height:1.6rem;">
+      <img  src="img/xinhuabaoxian.png" alt="" style="width:2.25rem;height:1.6rem;">
     </div>
     <div class="col-sm-2 two-logo">
-      <img src="img/zhongguotaiping.png" alt="" style="width:2.25rem;height:1.6rem;">
+      <img  src="img/zhongguotaiping.png" alt="" style="width:2.25rem;height:1.6rem;">
     </div>
     <div class="col-sm-2 two-logo">
-      <img src="img/taipingyangbaoxian.png" alt="" style="width:2.25rem;height:1.6rem;">
+      <img  src="img/taipingyangbaoxian.png" alt="" style="width:2.25rem;height:1.6rem;">
     </div>
     <div class="col-sm-1">
     </div>
@@ -610,19 +549,19 @@
     <div class="col-sm-1">
     </div>
     <div class="col-sm-2 three-logo">
-      <img src="img/taikangrenshou.png" alt="" style="width:2.25rem;height:1.6rem;">
+      <img  src="img/taikangrenshou.png" alt="" style="width:2.25rem;height:1.6rem;">
     </div>
     <div class="col-sm-2 three-logo">
-      <img src="img/huaxiabaoxian.png" alt="" style="width:2.25rem;height:1.6rem;">
+      <img  src="img/huaxiabaoxian.png" alt="" style="width:2.25rem;height:1.6rem;">
     </div>
     <div class="col-sm-2 three-logo">
-      <img src="img/tongfangquanqiurenshou.png" alt="" style="width:2.25rem;height:1.6rem;">
+      <img  src="img/tongfangquanqiurenshou.png" alt="" style="width:2.25rem;height:1.6rem;">
     </div>
     <div class="col-sm-2 two-logo">
-      <img src="img/hongkangrenshou.png" alt="" style="width:2.25rem;height:1.6rem;">
+      <img  src="img/hongkangrenshou.png" alt="" style="width:2.25rem;height:1.6rem;">
     </div>
     <div class="col-sm-2 two-logo">
-      <img src="img/dingdingbaodai.png" alt="" style="width:2.25rem;height:1.6rem;">
+      <img  src="img/dingdingbaodai.png" alt="" style="width:2.25rem;height:1.6rem;">
     </div>
     <div class="col-sm-1">
     </div>
@@ -633,10 +572,10 @@
   <div class="row" style="padding-left:0.6rem;padding-right:0.2rem;">
     <div class="col-sm-4 email" style="font-size:0.15rem;padding-top:0.35rem;height:1.53rem;">
       <div style="line-height:0.3rem;">
-        <img src="img/youjian.png" style="width:0.24rem;height:0.24rem;margin-right:0.1rem;" alt="">咨询邮箱：fanshen@financingfeature.com
+        <img  src="img/youjian.png" style="width:0.24rem;height:0.24rem;margin-right:0.1rem;" alt="">咨询邮箱：fanshen@financingfeature.com
       </div>
       <div style="line-height:0.3rem;">
-        <img src="img/zhaopin.png" style="width:0.24rem;height:0.24rem;margin-right:0.1rem;" alt="">招聘邮箱：luzhihui@financingfeature.com
+        <img  src="img/zhaopin.png" style="width:0.24rem;height:0.24rem;margin-right:0.1rem;" alt="">招聘邮箱：luzhihui@financingfeature.com
       </div>
       <div style="color:#848484;position:relative;font-size:0.14rem;top:0.3rem;">
         ©北京财未来科技有限公司2015版权所有
@@ -644,21 +583,21 @@
     </div>
     <div class="col-sm-4 contact" style="font-size:0.15rem;padding-top:0.35rem;">
       <div style="line-height:0.3rem;">
-        <img src="img/weixin.png" style="width:0.24rem;height:0.24rem;margin-right:0.1rem;" alt="">客服微信：baoxianshenqi001
+        <img  src="img/weixin.png" style="width:0.24rem;height:0.24rem;margin-right:0.1rem;" alt="">客服微信：baoxianshenqi001
       </div>
       <div style="line-height:0.3rem;">
-        <img src="img/qq.png" style="width:0.24rem;height:0.24rem;margin-right:0.1rem;" alt="">官方QQ群：12345678901
+        <img  src="img/qq.png" style="width:0.24rem;height:0.24rem;margin-right:0.1rem;" alt="">官方QQ群：12345678901
       </div>
     </div>
     <div class="col-sm-4 qrcode">
       <div class="col-sm-6 phone-grid" style="text-align:center;">
-        <img src="img/gongzhonghao.png" alt="" style="width:1.25rem;height:1.23rem;display:inline-block;">
+        <img  src="img/gongzhonghao.png" alt="" style="width:1.25rem;height:1.23rem;display:inline-block;">
         <div style="font-size:0.15rem;line-height:0.3rem;">
           微信关注我们
         </div>
       </div>
       <div class="col-sm-6 phone-grid" style="text-align:center;">
-        <img src="img/xiazailianjie.png" alt="" style="width:1.25rem;height:1.23rem;display:inline-block;">
+        <img  src="img/xiazailianjie.png" alt="" style="width:1.25rem;height:1.23rem;display:inline-block;">
         <div style="font-size:0.15rem;line-height:0.3rem;">
           IOS&Android
         </div>
@@ -685,7 +624,6 @@
     var $mainTittle = $('#mainTittle')
     var $topBanner = $('#topBanner')
     var $lTittle = $('.l-tittle')
-
 
     $window.scroll(function(event){
       var currentTop = $window.scrollTop();

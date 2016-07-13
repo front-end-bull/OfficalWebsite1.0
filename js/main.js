@@ -1,46 +1,68 @@
-jQuery(document).ready(function($){
-	var isLateralNavAnimating = false;
-	
-	//open/close lateral navigation
-	$('.cd-nav-trigger').on('click', function(event){
-		event.preventDefault();
-		//stop if nav animation is running 
-		if( !isLateralNavAnimating ) {
-			if($(this).parents('.csstransitions').length > 0 ) isLateralNavAnimating = true; 
-			
-			$('body').toggleClass('navigation-is-open');
-			$('.cd-navigation-wrapper').one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function(){
-				//animation is over
-				isLateralNavAnimating = false;
-			});
-		}
-	});
+/**
+ * Created by Administrator on 2015/4/7.
+ */
+require.config({
+    waitSeconds : 45,
+    paths: {
+        "jquery": "jquery.min",
+        "typed":"typed",
+        "slippry":"slippry",
+        "bootstrap":"bootstrap.min"
+        // "swiper":"sj",
+        // "swiperAnimate":"sa",
+        // "jweixin":"jweixin-1.0.0",
+        // "sha1":"sha1"
+    },
+    map: {
+        '*': {
+            'css': 'css.min'
+        }
+    },
+    shim : {
+        "jquery": {
+            exports: "jquery"
+        },
+        "typed":{
+            deps: ["jquery"]
+        },
+        "slippry":{
+            deps:["jquery"]
+        }
+    }
 });
 
+require(["jquery","typed"],function($,typed){
+
+    $(".element").typed({
+      strings:titleArr,
+      typeSpeed: 70,
+      showCursor: false
+    });
 
 
-$(document).ready(function(){
+    $(function(){
+        if(!isPhone){
+            $('.lazy-css').each(
+                function(){
+                $(this).attr("src",$(this).attr("lazy-src")).removeAttr("lazy-src")
+            });
+        }
+        
+    });
 
-	// hide #back-top first
-	$("#back-top").hide();
-	
-	// fade in #back-top
-	$(function () {
-		$(window).scroll(function () {
-			if ($(this).scrollTop() > 400) {
-				$('#back-top').fadeIn();
-			} else {
-				$('#back-top').fadeOut();
-			}
-		});
-
-		// scroll body to 0px on click
-		$('#back-top a').click(function () {
-			$('body,html').animate({
-				scrollTop: 0
-			}, 400);
-			return false;
-		});
-	});
+    require(["slippry","bootstrap"],function(){
+        $(function() {
+          var demo1 = $("#slider").slippry({
+             transition: 'kenburns',
+             useCSS: true,
+             speed: 5000,
+             pause: 9000,
+             auto: true,
+             controls: false,
+             preload: 'visible',
+             autoHover: false
+          });
+        });
+    });
 
 });

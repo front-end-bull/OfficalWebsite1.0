@@ -102,12 +102,13 @@
     transform: translateY(-20%) translateX(-10%); } }
 /* added to the original element calling slippry */
 .sy-box.sy-loading {
-  background: url("../img/sy-loader.gif") 50% 50% no-repeat;
-  -moz-background-size: 32px;
-  -o-background-size: 32px;
-  -webkit-background-size: 32px;
-  background-size: 32px;
-  min-height: 40px; }
+   /*background: url("../img/sy-loader.gif") 50% 50% no-repeat;
+   -moz-background-size: 32px;
+   -o-background-size: 32px;
+   -webkit-background-size: 32px;
+   background-size: 32px;
+   min-height: 40px; */
+}
   .sy-box.sy-loading .sy-slides-wrap, .sy-box.sy-loading .sy-pager {
     visibility: hidden; }
 
