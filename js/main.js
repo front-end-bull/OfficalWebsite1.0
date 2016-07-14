@@ -22,34 +22,34 @@ require.config({
         "jquery": {
             exports: "jquery"
         },
-        "typed":{
-            deps: ["jquery"]
-        },
+        // "typed":{
+        //     deps: ["jquery"]
+        // },
         "slippry":{
             deps:["jquery"]
         }
     }
 });
 
-require(["jquery","typed"],function($,typed){
+require(["jquery"],function($){
 
     var screenWidth = $(window).width()
 
-    var titleArr = []
+    // var titleArr = []
 
     $(function(){
 
-        if(screenWidth>800){
-          titleArr.push("互联网＋保险的探索者，致力于创造最好用的展业工具")
-        }else{
-          titleArr.push("互联网＋保险的探索者，<br>致力于创造最好用的展业工具")
-        }
+        // if(screenWidth>800){
+        //   titleArr.push("互联网＋保险的探索者，致力于创造最好用的展业工具")
+        // }else{
+        //   titleArr.push("互联网＋保险的探索者，<br>致力于创造最好用的展业工具")
+        // }
 
-        $(".element").typed({
-          strings:titleArr,
-          typeSpeed: 70,
-          showCursor: false
-        });
+        // $(".element").typed({
+        //   strings:titleArr,
+        //   typeSpeed: 70,
+        //   showCursor: false
+        // });
 
         if(screenWidth>800){
             $('.lazy-css').each(
