@@ -1,13 +1,15 @@
 
   html{
     font-size: 100px;
+    overflow-x: hidden;
   }
  @font-face{
     font-family: fangzheng;
     src:url('../font/fangzheng.ttf');
   }
+
 /* global panel */
-body { background-color: #fff;  font-size: 18px; color: #4c4c4c; -webkit-font-smoothing: antialiased; /* This needs to be set or some font faced fonts look bold on Mac in Chrome/Webkit based browsers. */ -moz-osx-font-smoothing: grayscale; /* Fixes font bold issue in Firefox version 25+ on Mac */ }
+body { background-color: #fff;font-size: 18px; color: #4c4c4c; -webkit-font-smoothing: antialiased; /* This needs to be set or some font faced fonts look bold on Mac in Chrome/Webkit based browsers. */ -moz-osx-font-smoothing: grayscale; /* Fixes font bold issue in Firefox version 25+ on Mac */ }
 h1 { font-family: "BebasNeueRegular", Arial, sans-serif; font-size: 42px;}
 a:hover, a:active, a:focus { outline: 0; color: #fff; text-decoration: none; }
 .m-button { margin-top: 5em; } .m-button-top { margin-top: 1.58em; } .p-bottom { padding-bottom: 3em; } .p-bottom-5 { padding-bottom: 6em !important; } .m-img-top { margin-top: 1.4em; }
@@ -281,7 +283,7 @@ a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f
   #hezuo div{
     color:#4e5776 !important;
   }
-  #header{ background: url('../img/bg.jpg') no-repeat!important; -webkit-background-size: cover !important; -moz-background-size: cover !important; -o-background-size: cover !important; background-size: cover !important; min-height: auto!important;  }
+  #header{ background: url('../img/bg.jpg') center bottom no-repeat!important; -webkit-background-size: cover !important; -moz-background-size: cover !important; -o-background-size: cover !important; background-size: cover !important; min-height: auto!important;  }
   
   #wenti .row:nth-child(1) {
     padding-top: 1.5rem;
@@ -560,7 +562,7 @@ a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f
   }
 
   #header{
-    min-height: 14rem;
+    min-height: 14rem !important;
   }
 
   #header .caption {
@@ -576,36 +578,12 @@ a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f
 }
 
 
-@media only screen and (max-width:700px){
+@media only screen and (max-width:450px){
    #header .caption {
     padding-top: 55%;
   }
 }
 
-
-@media only screen and (max-width: 640px) {
-  // html{font-size: 60px;}
-	 // #caption h1 { font-size: 3em; margin-bottom: 0.2em; margin-top: 0em; } #caption span { font-size: 22px; }
-	 // .hde-social { display: none; } 
-	 // #awwwards { display: none; }
-	 
-}
-@media only screen and (max-width: 480px) {
-  // .kenburns{
-  //   width: 340% !important;
-  //   left: -170% !important;
-  // }
-  // html{font-size: 60px;}
-	 // #caption h1 { font-size: 3em; margin-bottom: 0.5em; margin-top: 0em; } #caption span { font-size: 16px; }
-	 // .ghost-button  { margin-bottom: 1em; } .m-button { margin-top: 2em!important; } 
-	 //  #mice { padding-top: 2em!important;}
-	 //  // #header { background: url(../img/slide1.jpg) top center no-repeat!important; -webkit-background-size: cover; -moz-background-size: cover; -o-background-size: cover; background-size: cover!important; min-height: auto!important;  }  
-	  
-}
-@media only screen and (max-width: 320px) {
-  //  html{font-size: 60px;}
-	 // #caption h1 { font-size: 2em; margin-bottom: 0.2em; margin-top: 0em; } #caption span { font-size: 16px; }
-}
 
 .bgblue { background-color: #0daad0; }
 .bgorange { background-color: #f16529; }
