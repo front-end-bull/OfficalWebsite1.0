@@ -8,6 +8,391 @@
     src:url('../font/fangzheng.ttf');
   }
 
+  body > .navbar-collapse .nav > li {
+    border-bottom: 1px solid #e5e5e5;
+}
+
+
+
+.nav>li>a:focus, .nav>li>a:hover {
+    text-decoration: none;
+    color: #c5a47e !important;
+    background-color: white;
+}
+
+.nav > li {
+    position: relative;
+    display: block;
+}
+
+body > .navbar-collapse .nav > li > a {
+    margin: 0px 0px;
+    color: #444444;
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 18px;
+    padding: 24px 0;
+}
+
+  body > .navbar-collapse {
+    position: fixed;
+    display: block;
+    top: 0;
+    height: 100%;
+    width: 230px;
+    right: 0;
+    z-index: 1032;
+    visibility: visible;
+    background-color: white;
+    overflow-y: visible;
+    border-top: none;
+    text-align: left;
+    border-left: 1px solid #e3e3e3;
+    padding-right: 0px;
+    padding-left: 40px;
+    -webkit-transform: translate3d(230px, 0, 0);
+    -moz-transform: translate3d(230px, 0, 0);
+    -o-transform: translate3d(230px, 0, 0);
+    -ms-transform: translate3d(230px, 0, 0);
+    transform: translate3d(230px, 0, 0);
+    -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+  }
+  .navbar-collapse {
+      padding-right: 15px;
+      padding-left: 15px;
+      overflow-x: visible;
+      -webkit-overflow-scrolling: touch;
+      border-top: 1px solid transparent;
+      -webkit-box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+      box-shadow: inset 0 1px 0 rgba(255, 255, 255, .1);
+  }
+
+
+  .nav-open .navbar-collapse {
+    -webkit-transform: translate3d(0px, 0, 0);
+    -moz-transform: translate3d(0px, 0, 0);
+    -o-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+  }
+  
+
+  #topBanner {
+    -webkit-transform: translate3d(0px, 0, 0);
+    -moz-transform: translate3d(0px, 0, 0);
+    -o-transform: translate3d(0px, 0, 0);
+    -ms-transform: translate3d(0px, 0, 0);
+    transform: translate3d(0px, 0, 0);
+    -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    position: relative;
+  }
+
+  .nav-open #topBanner {
+    -webkit-transform: translate3d(-230px, 0, 0);
+    -moz-transform: translate3d(-230px, 0, 0);
+    -o-transform: translate3d(-230px, 0, 0);
+    -ms-transform: translate3d(-230px, 0, 0);
+    transform: translate3d(-230px, 0, 0);
+}
+
+  .wrapper{
+    -webkit-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -moz-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -o-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    -ms-transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    transition: all 0.5s cubic-bezier(0.685, 0.0473, 0.346, 1);
+    left: 0;
+  }
+
+  .nav-open .wrapper {
+    left: 0;
+    -webkit-transform: translate3d(-115px, 0, 0);
+    -moz-transform: translate3d(-115px, 0, 0);
+    -o-transform: translate3d(-115px, 0, 0);
+    -ms-transform: translate3d(-115px, 0, 0);
+    transform: translate3d(-115px, 0, 0);
+  }
+
+.navbar-toggle{
+  margin-top: 0;
+  margin-bottom: 0;
+  width: 40px;
+  height: 40px;
+}
+
+
+@keyframes topbar-x {
+  0% {
+    top: 0px;
+    transform: rotate(0deg);
+  }
+  45% {
+    top: 6px;
+    transform: rotate(145deg);
+  }
+  75% {
+    transform: rotate(130deg);
+  }
+  100% {
+    transform: rotate(135deg);
+  }
+}
+@-webkit-keyframes topbar-x {
+  0% {
+    top: 0px;
+    -webkit-transform: rotate(0deg);
+  }
+  45% {
+    top: 6px;
+    -webkit-transform: rotate(145deg);
+  }
+  75% {
+    -webkit-transform: rotate(130deg);
+  }
+  100% {
+    -webkit-transform: rotate(135deg);
+  }
+}
+@-moz-keyframes topbar-x {
+  0% {
+    top: 0px;
+    -moz-transform: rotate(0deg);
+  }
+  45% {
+    top: 6px;
+    -moz-transform: rotate(145deg);
+  }
+  75% {
+    -moz-transform: rotate(130deg);
+  }
+  100% {
+    -moz-transform: rotate(135deg);
+  }
+}
+@keyframes topbar-back {
+  0% {
+    top: 6px;
+    transform: rotate(135deg);
+  }
+  45% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(5deg);
+  }
+  100% {
+    top: 0px;
+    transform: rotate(0);
+  }
+}
+@-webkit-keyframes topbar-back {
+  0% {
+    top: 6px;
+    -webkit-transform: rotate(135deg);
+  }
+  45% {
+    -webkit-transform: rotate(-10deg);
+  }
+  75% {
+    -webkit-transform: rotate(5deg);
+  }
+  100% {
+    top: 0px;
+    -webkit-transform: rotate(0);
+  }
+}
+@-moz-keyframes topbar-back {
+  0% {
+    top: 6px;
+    -moz-transform: rotate(135deg);
+  }
+  45% {
+    -moz-transform: rotate(-10deg);
+  }
+  75% {
+    -moz-transform: rotate(5deg);
+  }
+  100% {
+    top: 0px;
+    -moz-transform: rotate(0);
+  }
+}
+@keyframes bottombar-x {
+  0% {
+    bottom: 0px;
+    transform: rotate(0deg);
+  }
+  45% {
+    bottom: 6px;
+    transform: rotate(-145deg);
+  }
+  75% {
+    transform: rotate(-130deg);
+  }
+  100% {
+    transform: rotate(-135deg);
+  }
+}
+@-webkit-keyframes bottombar-x {
+  0% {
+    bottom: 0px;
+    -webkit-transform: rotate(0deg);
+  }
+  45% {
+    bottom: 6px;
+    -webkit-transform: rotate(-145deg);
+  }
+  75% {
+    -webkit-transform: rotate(-130deg);
+  }
+  100% {
+    -webkit-transform: rotate(-135deg);
+  }
+}
+@-moz-keyframes bottombar-x {
+  0% {
+    bottom: 0px;
+    -moz-transform: rotate(0deg);
+  }
+  45% {
+    bottom: 6px;
+    -moz-transform: rotate(-145deg);
+  }
+  75% {
+    -moz-transform: rotate(-130deg);
+  }
+  100% {
+    -moz-transform: rotate(-135deg);
+  }
+}
+@keyframes bottombar-back {
+  0% {
+    bottom: 6px;
+    transform: rotate(-135deg);
+  }
+  45% {
+    transform: rotate(10deg);
+  }
+  75% {
+    transform: rotate(-5deg);
+  }
+  100% {
+    bottom: 0px;
+    transform: rotate(0);
+  }
+}
+@-webkit-keyframes bottombar-back {
+  0% {
+    bottom: 6px;
+    -webkit-transform: rotate(-135deg);
+  }
+  45% {
+    -webkit-transform: rotate(10deg);
+  }
+  75% {
+    -webkit-transform: rotate(-5deg);
+  }
+  100% {
+    bottom: 0px;
+    -webkit-transform: rotate(0);
+  }
+}
+@-moz-keyframes bottombar-back {
+  0% {
+    bottom: 6px;
+    -moz-transform: rotate(-135deg);
+  }
+  45% {
+    -moz-transform: rotate(10deg);
+  }
+  75% {
+    -moz-transform: rotate(-5deg);
+  }
+  100% {
+    bottom: 0px;
+    -moz-transform: rotate(0);
+  }
+}
+
+ .bar1 {
+    top: 0px;
+    -webkit-animation: topbar-back 500ms linear 0s;
+    -moz-animation: topbar-back 500ms linear 0s;
+    animation: topbar-back 500ms 0s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+ .bar3 {
+    bottom: 0px;
+    -webkit-animation: bottombar-back 500ms linear 0s;
+    -moz-animation: bottombar-back 500ms linear 0s;
+    animation: bottombar-back 500ms 0s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+ .toggled .bar1 {
+    top: 6px;
+    -webkit-animation: topbar-x 500ms linear 0s;
+    -moz-animation: topbar-x 500ms linear 0s;
+    animation: topbar-x 500ms 0s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+ .toggled .bar2 {
+    opacity: 0;
+}
+
+ .toggled .bar3 {
+    bottom: 6px;
+    -webkit-animation: bottombar-x 500ms linear 0s;
+    -moz-animation: bottombar-x 500ms linear 0s;
+    animation: bottombar-x 500ms 0s;
+    -webkit-animation-fill-mode: forwards;
+    -moz-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+.navbar-toggle .icon-bar {
+    background: #fff;
+
+}
+
+
+.navbar-burger .bar1, .navbar-burger .bar2, .navbar-burger .bar3 {
+    outline: 1px solid transparent;
+}
+
+
+
+
+.navbar-toggle .icon-bar {
+    display: block;
+    position: relative;
+    width: 24px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+
+
+
+
+
 /* global panel */
 body { background-color: #fff;font-size: 18px; color: #4c4c4c; -webkit-font-smoothing: antialiased; /* This needs to be set or some font faced fonts look bold on Mac in Chrome/Webkit based browsers. */ -moz-osx-font-smoothing: grayscale; /* Fixes font bold issue in Firefox version 25+ on Mac */ }
 h1 { font-family: "BebasNeueRegular", Arial, sans-serif; font-size: 42px;}
@@ -31,6 +416,14 @@ label { font-weight: normal; margin-bottom: 7px; }
 .glyphicon { margin-bottom: 2em; vertical-align: middle; }
 a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f16529; }
 
+
+.two-logo{
+  text-align: center;
+}
+.img-center{
+  display: inline-block;
+}
+
 #header { text-align: center; padding-top: 0.8rem; padding-bottom: 0.4rem; min-height: 8.3rem; z-index: 2; position: relative; }
 #header .caption { padding-top: 20%; z-index: 1; position: relative; } #header .caption-sub { padding-top: 5%; padding-bottom: 2em;}
 #header .download{ position:relative;width:3.5rem;height:1.2rem;border-radius:0.08rem;margin-left:auto;margin-right:auto;top:1rem;}
@@ -52,7 +445,7 @@ a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f
 }
 
 #topBanner{
-  position:fixed;top:0;width:100%;z-index:999;transition:all 0.5s ease-in;padding-bottom:0.1rem;
+  position:fixed;top:0;width:100%;z-index:999;padding-bottom:0.1rem;
 }
 
 #topBanner div:nth-child(1){
@@ -113,9 +506,9 @@ a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f
   html{font-size: 90px;}
 }
 
-// @media only screen and (max-width: 1380px) {
-//   html{font-size: 84px;}
-// }
+ /*@media only screen and (max-width: 1380px) {*/
+   /*html{font-size: 84px;}*/
+ /*}*/
 
 
 @media only screen and (max-width: 1280px) {
@@ -298,18 +691,20 @@ a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f
   }
 
   #topBanner{
-    position:fixed;top:0;width:100%;z-index:999;transition:all 0.5s ease-in;padding-bottom:0.1rem;
+    position:fixed;top:0;width:100%;z-index:999;padding-bottom:0.1rem;
   }
   
   #topBanner div:nth-child(1){
    position:static;
    width: 100%;
-   text-align: center;
+   text-align: left;
+   padding-left: 15px;
    padding-top: 0.1rem;
   }
   
   .phone-show{
-    visibility: hidden;
+    /*visibility: hidden;*/
+    display: none;
   }
 
   #topBanner div:nth-child(2){
@@ -375,13 +770,13 @@ a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f
   }
 
   #lianjie{
-    // margin-top: 1rem;
+     /*margin-top: 1rem;*/
     padding-bottom: 1.5rem !important;
   }
 
   .phone-row-label{
     margin-left: -10px;
-    // margin-right: 0;
+     /*margin-right: 0;*/
   }
 
   .phone-row-label img{
@@ -402,20 +797,21 @@ a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f
     margin-top: 0.2rem;
   }
 
-  .two-logo:nth-child(5) img{
-    position: absolute;
-    display: block;
-    right: 0.1rem;
-  }
+  /* .two-logo:nth-child(5) img{
+     position: absolute;
+     display: block;
+     right: 0.1rem;
+   }
   
-  .two-logo:nth-child(6) img{
-    position: absolute;
-    display: block;
-    left: 0.1rem;
-  }
+   .two-logo:nth-child(6) img{
+     position: absolute;
+     display: block;
+     left: 0.1rem;
+   }*/
 
   .phone-row-label:nth-child(3){
-    margin-top: 3rem !important;
+    /*margin-top: 3rem !important;*/
+    margin-top: 0 !important;
   }
 
 
@@ -445,7 +841,7 @@ a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f
     min-height: 1.6rem !important;
   }
   .phone-hidden{
-    // visibility: hidden;
+     /*visibility: hidden;*/
     display: none;
   }
   .phone-grid{
@@ -573,8 +969,8 @@ a .glyphicon { color: #4c4c4c;font-size: 1.1em; } a:hover .glyphicon { color: #f
     height: 10rem !important;
   }
 
-  // #caption h1 { font-size: 3em; margin-bottom: 0.5em; margin-top: 0em; } #caption span { font-size: 16px; }
-  // #mice { padding-top: 2em!important;}
+   /*#caption h1 { font-size: 3em; margin-bottom: 0.5em; margin-top: 0em; } #caption span { font-size: 16px; }*/
+   /*#mice { padding-top: 2em!important;}*/
 }
 
 
