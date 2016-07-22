@@ -8,6 +8,11 @@
     src:url('../font/fangzheng.ttf');
   }
 
+  @font-face{
+    font-family: XH;
+    src:url('../font/XH.ttc');
+  }
+
   body > .navbar-collapse .nav > li {
     border-bottom: 1px solid #e5e5e5;
 }
@@ -394,7 +399,7 @@ body > .navbar-collapse .nav > li > a {
 
 
 /* global panel */
-body { background-color: #fff;font-size: 18px; color: #4c4c4c; -webkit-font-smoothing: antialiased; /* This needs to be set or some font faced fonts look bold on Mac in Chrome/Webkit based browsers. */ -moz-osx-font-smoothing: grayscale; /* Fixes font bold issue in Firefox version 25+ on Mac */ }
+body { font-family:XH;background-color: #fff;font-size: 18px; color: #4c4c4c; -webkit-font-smoothing: antialiased; /* This needs to be set or some font faced fonts look bold on Mac in Chrome/Webkit based browsers. */ -moz-osx-font-smoothing: grayscale; /* Fixes font bold issue in Firefox version 25+ on Mac */ }
 h1 { font-family: "BebasNeueRegular", Arial, sans-serif; font-size: 42px;}
 a:hover, a:active, a:focus { outline: 0; color: #fff; text-decoration: none; }
 .m-button { margin-top: 5em; } .m-button-top { margin-top: 1.58em; } .p-bottom { padding-bottom: 3em; } .p-bottom-5 { padding-bottom: 6em !important; } .m-img-top { margin-top: 1.4em; }
